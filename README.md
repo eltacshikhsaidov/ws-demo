@@ -51,3 +51,5 @@ URL: http://172.105.85.188:8080/
 ## Contributing
 
 ## License
+
+Feel free to customize the template according to the specific details and features of your project.
