@@ -9,6 +9,4 @@ public interface ItemService {
     List<Item> getAllItems();
 
     void removeItem(long docNo);
-
-    void restoreAllRemovedItems();
 }

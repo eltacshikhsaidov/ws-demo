@@ -28,7 +28,7 @@ public class ItemController {
     @GetMapping("/remove/{docNo}")
     public String removeItem(@PathVariable long docNo) {
         itemService.removeItem(docNo);
-        return "redirect:/";
+        return "home";
     }
 
 }

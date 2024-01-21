@@ -21,7 +21,7 @@
         <td th:text="${item.docNo}"></td>
         <td th:text="${item.name}"></td>
         <td>
-            <a th:href="'/remove/' + ${item.docNo}">Remove</a>
+            <a th:onclick="'removeItem(' + ${item.docNo} + ')'" href="#">Sil</a>
         </td>
     </tr>
     </tbody>

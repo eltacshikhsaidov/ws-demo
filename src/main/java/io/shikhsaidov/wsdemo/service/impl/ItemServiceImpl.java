@@ -47,14 +47,4 @@ public class ItemServiceImpl implements ItemService {
             itemRepository.delete(itemOptional.get());
         }
     }
-
-    @Override
-    public void restoreAllRemovedItems() {
-        var request = new ChangeActivityResponse();
-        request.setAction(Action.REFRESH);
-        request.setType(Type.COLLEAGUE);
-        request.setState(State.ACTIVE);
-        request.setDocNo(null);
-        messagingTemplate.convertAndSend("/topic/activity", request);
-    }
 }
